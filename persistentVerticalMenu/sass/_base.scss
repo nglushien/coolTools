@@ -16,7 +16,7 @@ audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
 [hidden] { display: none; }
 
 /* 'namespace' as much of normalize as possible due to embedded microsites */
-#micrositeContainer{margin:40px 0;}
+#micrositeContainer{margin:0;}
 #micrositeContainer a:hover, #micrositeContainer a:active { outline: 0; }
 #micrositeContainer b, #micrositeContainer strong { font-weight: bold; }
 #micrositeContainer blockquote { margin: 1em 40px; }
@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6 { margin: 0 0 10px; font-weight: bold; line-height: 1.1; 
 a { color: #2ba6cb; text-decoration: none; }
 a:hover { color: #2795b6; }
 a:focus { outline: none; color: #2ba6cb; }
-#micrositeContainerCompress { margin: 0 auto; width: 980px; background-color: #fff; }
+#micrositeContainerCompress { height:auto; margin: 0 auto; overflow:hidden; width: 980px; background-color: #fff; }
 #micrositeHeader,
 #micrositeFooter,
 #micrositeContentColumnLeft,
@@ -51,5 +51,5 @@ a:focus { outline: none; color: #2ba6cb; }
 #micrositeContentColumnRight { float: right; margin: 0 25px 25px 0; width: 300px;}
 #micrositeHeader { margin: 0 0 25px; }
 #micrositeFooter { clear: both; margin: 0; }
-#micrositeContent { position: relative; }
+#micrositeContent { height:auto; overflow: hidden; position: relative; }
 #micrositeContentColumnFull { clear: both; margin: 0 20px 25px; padding:20px 0; width:940px;}

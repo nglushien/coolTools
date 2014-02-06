@@ -512,7 +512,7 @@ audio, canvas, video {
 
 /* 'namespace' as much of normalize as possible due to embedded microsites */
 #micrositeContainer {
-  margin: 40px 0;
+  margin: 0;
 }
 
 #micrositeContainer a:hover, #micrositeContainer a:active {
@@ -635,7 +635,9 @@ a:focus {
 }
 
 #micrositeContainerCompress {
+  height: auto;
   margin: 0 auto;
+  overflow: hidden;
   width: 980px;
   background-color: #fff;
 }
@@ -672,6 +674,8 @@ a:focus {
 }
 
 #micrositeContent {
+  height: auto;
+  overflow: hidden;
   position: relative;
 }
 
@@ -680,4 +684,193 @@ a:focus {
   margin: 0 20px 25px;
   padding: 20px 0;
   width: 940px;
+}
+
+#micrositeContentColumnLeft {
+  margin: 0;
+  float: left;
+  width: 320px;
+}
+
+#micrositeContentColumnMain {
+  margin: 0;
+  float: right;
+  width: 820px;
+  position: relative;
+}
+#micrositeContentColumnMain h1 {
+  margin: 30px 0 10px;
+}
+#micrositeContentColumnMain p {
+  margin: 15px 0;
+}
+#micrositeContentColumnMain .calloutBox h1 {
+  font-size: 27px;
+  font-weight: normal;
+  margin: 0;
+}
+#micrositeContentColumnMain .calloutBox p:last-of-type {
+  margin-bottom: 0;
+}
+#micrositeContentColumnMain .mainContent {
+  width: 600px;
+}
+
+#micrositeHeader {
+  margin: 0 0 25px;
+  position: relative;
+}
+
+#micrositeFooter {
+  background: #000;
+  color: #fff;
+  border: solid 1px #e6e6e6;
+  padding: 0 0 20px;
+  margin: 0;
+  text-transform: uppercase;
+  height: 300px;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+}
+
+h4 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+.fleft {
+  float: left;
+}
+
+.fright {
+  float: right;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.topFixed {
+  position: fixed !important;
+  top: 10px !important;
+  padding-left: 640px !important;
+}
+
+.topRelative {
+  position: relative;
+  top: 0;
+}
+
+ul.footer {
+  margin: 55px auto 95px !important;
+  padding: 0 !important;
+  width: 1000px;
+}
+ul.footer li {
+  float: left;
+  width: 200px;
+  list-style-type: none;
+  padding: 0 30px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+ul.footer li:last-of-type {
+  padding-right: 0;
+}
+ul.footer li:nth-of-type(1) {
+  padding-left: 0;
+}
+ul.footer li:nth-of-type(5n) {
+  padding-right: 0;
+}
+ul.footer li:nth-of-type(6) {
+  clear: left;
+  padding-left: 0;
+}
+
+ul.copyright {
+  width: 1000px;
+  margin: 0 auto;
+}
+ul.copyright li {
+  font-size: 10px;
+  list-style-type: none;
+  float: left;
+  margin-right: 30px;
+}
+ul.copyright li a {
+  color: #fff !important;
+}
+
+.mainRightSidenav {
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+.mainRightSidenav h3 {
+  margin: 40px 0 15px;
+  text-transform: uppercase;
+  width: 150px !important;
+}
+.mainRightSidenav h3:first-of-type {
+  margin-top: 0;
+}
+.mainRightSidenav a {
+  font-size: 12px;
+  color: #000;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+.mainRightSidenav ul.rightSidenav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  width: 150px !important;
+}
+.mainRightSidenav ul.rightSidenav li {
+  margin: 0 0 10px 0;
+}
+.mainRightSidenav ul.rightSidenav li:last-of-type {
+  margin: 0;
+}
+.mainRightSidenav ul.rightSidenav li a {
+  color: #989898;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: none;
+}
+.mainRightSidenav ul.rightSidenav li.on a {
+  color: #000;
 }
