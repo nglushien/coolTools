@@ -720,6 +720,10 @@ a:focus {
   margin: 0 0 25px;
   position: relative;
 }
+#micrositeHeader h1 {
+  font-size: 26px;
+  margin: 10px 0;
+}
 
 #micrositeFooter {
   background: #000;
